@@ -38,7 +38,7 @@ function text2number(element) {
 }
 
 function validateAll() {
-    return showUprice() && showArea() && showAmort() && showDpayr() && showInr() && showCommr();
+    return showUprice() && showAmort() && showDpayr() && showInr() && showCommr();
 }
 
 function round(val, dec) {
@@ -164,19 +164,23 @@ function showLoanDuration() {
 
 function calculate() {
     var homeValue = text2number(document.getElementById('homevalue'));
-    var downPayment = text2number(document.getElementById('downpayment')) / 100;
+    var downPayment = text2number(document.getElementById('downpayment'));
+    var dpaypercent = document.getElementById('dpaypercent');
     var loanAmountObj = document.getElementById('loanamount');
     var interestRate = text2number(document.getElementById("interestrate")) / 100;
     var loanDuration = text2number(document.getElementById('loanduration'));
 
-    var dpay, hprice, mapy, tin, tpay;
+    var dpay, hprice, mapy, tin, tpay, dPercent;
 
     if (!isNull(homeValue) && !isNull(downPayment)) {
-        dpay = round(homeValue * downPayment, 2);
+        dpay = round(downPayment, 2);
+
         if (isNaN(dpay)) {
             dpay = "<font color='red'><strong>Unable to calculate</strong></font>";
+
         }
         var dpayMsg = document.getElementById("dpayMsg");
+
         dpayMsg.innerHTML = "<strong>£&nbsp;" + dpay + "</strong>";
     }
     if (!isNull(homeValue)) {
@@ -189,6 +193,8 @@ function calculate() {
     }
     if (!isNull(homeValue) && !isNull(downPayment)) {
         loanAmountObj.value = round(hprice - dpay, 2);
+        dPercent = round((dpay / hprice) * 100, 2);
+        dpaypercent.innerHTML = dPercent;
     }
     var loanAmount = text2number(document.getElementById('loanamount'));
     if (!isNull(homeValue) && !isNull(downPayment) && !isNull(interestRate) && !isNull(loanDuration)) {
@@ -211,6 +217,7 @@ function calculate() {
     }
     if (!isNull(homeValue) && !isNull(downPayment) && !isNull(interestRate) && !isNull(loanDuration)) {
         tin = round(tpay - (hprice - dpay), 2);
+
         if (isNaN(tin)) {
             tin = "<font color='red'><strong>Unable to calculate</strong></font>";
         }
@@ -218,6 +225,7 @@ function calculate() {
         tinMsg.innerHTML = "<strong>£&nbsp;" + tin + "</strong>";
     };
 };
+// Age Calculator:-
 
 function ageCalculate() {
     const months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];

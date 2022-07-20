@@ -18,12 +18,19 @@ button {
     position: absolute;
     height: 73%;
     width: 27%;
-    border: solid 4px;
-    background: linear-gradient(green, red);
+}
+
+.nam {
+    text-align: center;
+    color: aliceblue;
+    height: 40px;
+    background-color: red;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
-/* Mortgage Calculator */
+/* Age Calculator */
 
 .init {
     background: lightyellow;
@@ -86,4 +93,19 @@ button {
     place-items: center;
     padding: 20px 0;
     box-shadow: 0 15px 20px white;
+}
+
+.mortgagecontainer {
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: lightcoral;
+    padding: 10px;
+    width: 100%;
+}
+
+h3 {
+    font-size: 15px;
+    width: 30%;
+    text-align: center;
 }
