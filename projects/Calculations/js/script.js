@@ -78,6 +78,7 @@ function showHomeValue() {
 function showDownPayment() {
     calculate();
     var downPayment = document.getElementById("downpayment");
+    var homeValue = document.getElementById("homevalue")
     var str = "";
     var flag = false;
     downPayment.className = "wrong";
@@ -85,8 +86,8 @@ function showDownPayment() {
         str = "<font color='red'><strong> * Haven't filled in</strong></font>";
     } else if (!isRegex(downPayment, /^\d+(\.\d{1,4})?$/)) {
         str = "<font color= 'red'><strong>Keep up to four decimals</strong></font>";
-    } else if (downPayment > 100) {
-        str = "<font color='red'><strong> * Percentage can't be more than 100</strong></font>";
+    } else if (downPayment.value > homeValue.value) {
+        str = "<font color='red'><strong> * down payment can't be more than home value</strong></font>";
     } else {
         str = "<font color='green'><strong>Valid</strong></font>";
         downPayment.className = "right";
@@ -197,7 +198,7 @@ function calculate() {
         dpaypercent.innerHTML = dPercent;
     }
     var loanAmount = text2number(document.getElementById('loanamount'));
-    if (!isNull(homeValue) && !isNull(downPayment) && !isNull(interestRate) && !isNull(loanDuration)) {
+    if (!isNull(homeValue) && !isNull(downPayment) && loanAmount >= 0 && !isNull(interestRate) && !isNull(loanDuration)) {
         mpay = round(((interestRate / 12) * loanAmount) /
             (1 - Math.pow(1 + (interestRate / 12), -(loanDuration * 12))), 2);
 
@@ -206,6 +207,12 @@ function calculate() {
         }
         var mpayMsg = document.getElementById("mpayMsg");
         mpayMsg.innerHTML = "<strong>£&nbsp;" + mpay + "</strong>";
+    } else {
+        mpay = "<font color='red'><strong>Unable to calculate</strong></font>";
+        var mpayMsg = document.getElementById("mpayMsg");
+        mpayMsg.innerHTML = "<strong>£&nbsp;" + mpay + "</strong>";
+        var LoanAmountMsg = document.getElementById("loanamountmsg");
+        LoanAmountMsg.innerHTML = "<font color='red'><strong> * Can't be less than zero</strong></font>";
     }
     if (!isNull(homeValue) && !isNull(interestRate) && !isNull(loanDuration)) {
         tpay = round(mpay * loanDuration * 12, 2);
