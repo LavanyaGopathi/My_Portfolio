@@ -1,0 +1,27 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appBackground {
+    position: relative;
+    background-image: url("../images/3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.changeBtn {
+    padding: 0.25rem 0.5rem;
+    border: 3px solid #fefefe;
+    border-radius: 11px;
+    color: #fefefe;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.changeBtn:hover {
+    background-color: black;
+}
