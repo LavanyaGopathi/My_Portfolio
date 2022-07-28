@@ -9,15 +9,15 @@ body {
     text-align: center;
 }
 
-.hexColor {
+.rgbColor {
     text-transform: capitalize;
 }
 
-.hex {
+.rgbSelector {
     font-size: 3rem;
 }
 
-.hexBtn {
+.rgbBtn {
     color: #310bf1;
     border: 3px solid #ac3a26;
     border-radius: 7px;
@@ -28,6 +28,6 @@ body {
     text-transform: capitalize;
 }
 
-.hexBtn:hover {
+.rgbBtn:hover {
     background: rgb(0, 0, 0);
 }
