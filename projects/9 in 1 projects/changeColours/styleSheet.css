@@ -18,7 +18,16 @@ body {
 }
 
 .hexBtn {
-    color: #f12502;
+    color: #310bf1;
     border: 3px solid #ac3a26;
     border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 1.6rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.hexBtn:hover {
+    background: rgb(0, 0, 0);
 }
