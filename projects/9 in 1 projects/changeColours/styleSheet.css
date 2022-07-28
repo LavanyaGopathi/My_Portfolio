@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.hexColor {
+    text-transform: capitalize;
+}
+
+.hex {
+    font-size: 3rem;
+}
+
+.hexBtn {
+    color: #f12502;
+    border: 3px solid #ac3a26;
+    border-radius: 7px;
+}
