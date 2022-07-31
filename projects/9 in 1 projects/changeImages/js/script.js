@@ -55,6 +55,8 @@ changeBtn.addEventListener('click', changeimage);
 function changeimage() {
     // Bodybcg.style.background = "url('./images/3.jpg')";
     let random = Math.floor(Math.random() * imgArray.length)
+    console.log(imgArray[random].src);
     Bodybcg.style.background = "url('" + imgArray[random].src + "') center center no-repeat,fixed";
     Bodybcg.style.backgroundSize = "100% 100vh"
+
 }
