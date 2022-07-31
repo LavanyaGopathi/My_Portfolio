@@ -11,7 +11,7 @@ function incrementCounter() {
     count++;
     counter.innerHTML = count;
     if (counter.innerHTML > '0') {
-        counter.getElementsByClassName.color = '#4caf50'
+        counter.style.color = 'green';
     } else if (counter.innerHTML === '0') {
         counter.style.color = 'white';
     }
@@ -22,7 +22,7 @@ function decrementCounter() {
     count--;
     counter.innerHTML = count;
     if (counter.innerHTML < '0') {
-        counter.getElementsByClassName.color = 'red'
+        counter.style.color = 'red';
     } else if (counter.innerHTML === '0') {
         counter.style.color = 'white';
     }
