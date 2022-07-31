@@ -10,6 +10,7 @@ body {
     background-image: url("../images/3.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100vh;
+    background-position: center;
 }
 
 .changeBtn {
