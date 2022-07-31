@@ -1,0 +1,53 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/backgroundImage.jpg);
+    color: darkblue;
+    font-family: 'calibric', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 7px;
+    background: rgb(221, 118, 80);
+    flex: 0 0 80%;
+}
+
+button {
+    display: block;
+    font-size: 2rem;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    color: azure;
+    background: rgb(147, 38, 21);
+    border-radius: 8px;
+    border: none;
+}
+
+button:hover {
+    background: black;
+    cursor: pointer;
+}
+
+input[type=text] {
+    padding: 00.5rem;
+    margin: 1rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    border: 3px solid #BBd5e9;
+    outline: none;
+}
+
+input[type=text]:focus {
+    box-shadow: 0 0 10px #BBd5e9;
+}
+
+#messageOut {
+    margin: 00.5rem 0;
+    color: #257e05;
+}
