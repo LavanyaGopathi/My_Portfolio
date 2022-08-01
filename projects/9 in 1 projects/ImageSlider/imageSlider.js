@@ -15,7 +15,7 @@ function nextSlide() {
 
     counter++;
 
-    container.style.backgroundImage = 'url(images/bcg-${counter}.jpg)';
+    container.style.backgroundImage = `url(images/bcg-${counter}.jpg)`;
 }
 
 function prevSlide() {
@@ -25,5 +25,5 @@ function prevSlide() {
 
     counter--;
 
-    container.style.backgroundImage = 'url(images/bcg-${counter}.jpg)';
+    container.style.backgroundImage = `url(images/bcg-${counter}.jpg)`;
 }

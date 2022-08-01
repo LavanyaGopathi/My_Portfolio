@@ -9,8 +9,8 @@ body {
 .images {
     background: yellow;
     flex: 0 0 70%;
-    min-height: 70vh;
-    background: url(images/1.jpg)center/cover no-repeat;
+    min-height: 80vh;
+    background: url(images/bcg-1.jpg)center/cover no-repeat;
     border-radius: 15px;
     box-shadow: 5px 10px black;
     position: relative;
