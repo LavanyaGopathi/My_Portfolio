@@ -106,7 +106,7 @@ def signup1():
     # username
     user2 = tk.Label(frame_input2,text="username",font=("Goudy old style",20,"bold"),fg="orangered",bg="white")
     user2.place(x=30,y=95)
-    uentry= tk.Entry(frame_input2,font=("times new roman",15,"bold"),bg="lightgray",textvariable=user2value)
+    user2= tk.Entry(frame_input2,font=("times new roman",15,"bold"),bg="lightgray",textvariable=user2value)
     user2.place(x=30,y=145,width=270,height=35)
 
     # password
@@ -118,7 +118,7 @@ def signup1():
     email = tk.Label(frame_input2, text="Email-id",font=("Goudy old style",20,"bold"),fg="orangered",bg="white")
     email.place(x=330,y=95)
     emailentry = tk.Entry(frame_input2,font=("times new roman",15,"bold"),bg="lightgray",textvariable=emailvalue)
-    emailentry.place(x=330,y=45,width=270,height=35) 
+    emailentry.place(x=330,y=145,width=270,height=35) 
     # Confirm Password
     confpass = tk.Label(frame_input2, text="Confirm Password",font=("Goudy old style",20,"bold"),fg="orangered",bg="white")
     confpass.place(x=330,y=195)
@@ -147,19 +147,19 @@ def main():
     
     # using it globally so that the data is made globally
     # creating the frame
-    frame_input = tk.Frame(w1,bg="#f48d51")
+    frame_input = tk.Frame(w1,bg="#f48")
     frame_input.place(x=320,y=130,height=500,width=400)
 
     #.place will place at desired pixels 
     # Adding text to the frame
-    tk.Label(text="UKRTC LOGIN", font=("Century Gothic Bold",30),fg="red").place(x=400,y=150)
+    tk.Label(text="UKRRT LOGIN", font=("Century Gothic Bold",30),fg="red").place(x=400,y=150)
     # it could be easily modified
-    tk.Label(text="USERNAME",font=("Century Gothic",25),fg="orangeRed",borderwidth=3,relief=tk.RIDGE).place(x=340,y=230)
-    tk.Label(text="PASSWORD",font=("Century Gothic",24),fg="orangeRed",borderwidth=3,relief=tk.RIDGE).place(x=340,y=340)
+    tk.Label(text="USERNAME",font=("Century Gothic",25),fg="red",borderwidth=3,relief=tk.RIDGE).place(x=340,y=230)
+    tk.Label(text="PASSWORD",font=("Century Gothic",24),fg="red",borderwidth=3,relief=tk.RIDGE).place(x=340,y=340)
     # Creating entry widgets
 
-    userEntry = tk.Entry(w1,fg="red",bg="darkgray",textvariable=uservalue)
-    passwordEntry = tk.Entry(w1,fg="red",bg="darkgray",textvariable=passvalue)
+    userEntry = tk.Entry(w1,fg="red",bg="green",textvariable=uservalue)
+    passwordEntry = tk.Entry(w1,fg="red",bg="green",textvariable=passvalue)
     userEntry.place(x=340,y=280)
     passwordEntry.place(x=340,y=390)
     # we have to place a login button
