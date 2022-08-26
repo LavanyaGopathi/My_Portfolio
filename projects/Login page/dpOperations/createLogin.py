@@ -1,5 +1,3 @@
-from distutils.cmd import Command
-from multiprocessing import connection
 import sqlite3
 conection = sqlite3.connect("projects/Login page/dpOperations/LoginDatabase.db")
 cursor = conection.cursor()
