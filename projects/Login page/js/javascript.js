@@ -24,29 +24,6 @@
             for (let i = 0; i < messages.length; i++) {
                 ErrorMsg.innerHTML += messages[i] + "<br>";
             }
-        }
-        return flag
+        } else
+            location.href = "url('projects/Login page/flask/templates/index.html')";
     }
-
-
-    // function showHomeValue() {
-    //     calculate();
-    //     var homeValue = document.getElementById("homevalue");
-    //     var str = "";
-    //     homeValue.className = "wrong";
-    //     var flag = false;
-    //     if (isNull(homeValue)) {
-    //         str = "<font color='red'><strong> * Haven't filled in</strong></font>";
-
-    //     } else if (!isRegex(homeValue, /^\d+(\.\d{1,2})?$/)) {
-    //         str = "<font color= 'red'><strong>Keep up to two decimals</strong></font>";
-
-    //     } else {
-    //         str = "<font color='green'><strong>Valid</strong></font>";
-    //         homeValue.className = "right";
-    //         flag = true;
-    //     }
-    //     var homeValueMsg = document.getElementById("homevaluemsg");
-    //     homeValueMsg.innerHTML = str;
-    //     return flag;
-    // };
