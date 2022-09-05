@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shop</title>
+    <link rel="stylesheet" href="../static/css/GroceryShop.css">
+    <script src="https://kit.fontawesome.com/e4cc3a7ee2.js" crossorigin="anonymous"></script>
+    <script>
+        function stickyMenu() {
+            var sticky = document.getElementById('sticky');
+            if (window.pageYOffset > 220) {
+                sticky.classList.add('sticky');
+            } else {
+                sticky.classList.remove('sticky');
+            }
+
+        }
+        window.onscroll = function() {
+            stickyMenu();
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="parallax">
+        <div class="page-title">Eat Fresh</div>
+    </div>
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="#" class="a-menu">
+                <li>Home</li>
+            </a>
+            <a href="#" class="a-menu">
+                <li>Deals</li>
+            </a>
+            <a href="#" class="a-menu">
+                <li>Vegetables</li>
+            </a>
+            <a href="#" class="a-menu">
+                <li>Fruits</li>
+            </a>
+            <a href="#" class="a-menu">
+                <li>Meat</li>
+            </a>
+            <a href="#" class="a-menu">
+                <li>Cart</li>
+            </a>
+        </ul>
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="Search..." name="search" class="search-input" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <!-- Home page Begins -->
+    <div class="container">
+        <a href="#vegitables">
+            <div class="categories">
+                <img src="../static/groceryiMAGES/deals/vegBac.jpg" class="item-image" />
+                <div class="image-title">Vegetables</div>
+            </div>
+        </a>
+        <a href="#Fruits">
+            <div class="categories">
+                <img src="../static/groceryiMAGES/fruits/fruitsBac.jpg" class="item-image" />
+                <div class="image-title">Fruits</div>
+            </div>
+        </a>
+        <a href="#SeaFoods">
+            <div class="categories">
+                <img src="../static/groceryiMAGES/nonVeg/nonVegBac.jpg" class="item-image" />
+                <div class="image-title">Meat And SeaFoods</div>
+            </div>
+        </a>
+        <a href="#Cart">
+            <div class="categories">
+                <img src="../static/groceryiMAGES/deals/tm.jpg" class="item-image" />
+                <div class="image-title">Cart</div>
+            </div>
+        </a>
+    </div>
+    <!-- Deal Begins Here -->
+    <div class="deals-container" id="deals">
+        <div class="parallax">
+            <div class="title">DEALS</div>
+        </div>
+        <div class="deal">
+            Save 20% on min-purchase of £20 on Vegetables<br>
+            <button class="coupon-btn">Add Coupon</button>
+        </div>
+        <div class="deal">
+            Save 20% on min-purchase of £20 on fruits<br>
+            <button class="coupon-btn">Add Coupon</button>
+        </div>
+        <div class="deal">
+            Save 20% on min-purchase of £30 on meat/sea food<br>
+            <button class="coupon-btn">Add Coupon</button>
+        </div>
+    </div>
+    <!-- Deals End Here -->
+    <div class="deals-container" id="vegetables">
+        <div class="parallax">
+            <div class="title">VEGETABLES</div>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/deals/broccoli.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Organic broccoli</b><br/>
+                <div class="item-select"></div>
+                Price : £1.99/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/deals/califlower.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Organic Coliflower</b><br/>
+                <div class="item-select"></div>
+                Price : £0.99/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/deals/carret.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Organic Carrot</b><br/>
+                <div class="item-select"></div>
+                Price : £0.75/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/deals/onions.jpg" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Organic Onions</b><br/>
+                <div class="item-select"></div>
+                Price : £0.75/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/deals/potatos.jpg" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Organic potatos</b><br/>
+                <div class="item-select"></div>
+                Price : £1.5/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/deals/spinich.jpg" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Organic Spinich</b><br/>
+                <div class="item-select"></div>
+                Price : £0.75/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+            <option >250 grams</option>
+            <option >500 grams</option>
+            <option >750 grams</option>
+            <option >1000 grams</option>
+        </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+
+    </div>
+    <!-- Fruits Bigins -->
+    <div class="deals-container" id="fruits">
+        <div class="parallax">
+            <div class="title">FRUITS</div>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/fruits/apple.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Organic Apples</b><br/>
+                <div class="item-select"></div>
+                Price : £1.75/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/fruits/Banna.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Organic Banna</b><br/>
+                <div class="item-select"></div>
+                Price : £0.87/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/fruits/blackBerry.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Organic BlackBerrys</b><br/>
+                <div class="item-select"></div>
+                Price : £2.0/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/fruits/Strawberry.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Organic Strawberry</b><br/>
+                <div class="item-select"></div>
+                Price : £2.5/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/fruits/Graps.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Organic Graps</b><br/>
+                <div class="item-select"></div>
+                Price : £3.2/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/fruits/mangos.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Organic Mangos</b><br/>
+                <div class="item-select"></div>
+                Price : £5.0/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+    <!-- meat and seafood Bigins -->
+    <div class="deals-container" id="meat">
+        <div class="parallax">
+            <div class="title">MEAT & SEAFOOD</div>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/nonVeg/chicken.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Whole chicken</b><br/>
+                <div class="item-select"></div>
+                Price : £3.2/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/nonVeg/meat.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Fresh Lamb</b><br/>
+                <div class="item-select"></div>
+                Price : £7.99/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/nonVeg/fish.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Live Fish</b><br/>
+                <div class="item-select"></div>
+                Price : £6.7/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+        <div class="item">
+            <div class="images">
+                <img src="../static/groceryiMAGES/nonVeg/prawn.jpg" class="item-image-size">
+
+            </div>
+            <div class="description">
+                <b>Peeled Prawns</b><br/>
+                <div class="item-select"></div>
+                Price : £6.00/250grams
+            </div>
+            <label>Qty</label>
+            <select class="item-select">
+                <option >250 grams</option>
+                <option >500 grams</option>
+                <option >750 grams</option>
+                <option >1000 grams</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+
+    </div>
+
+    <!-- Home Page Ends -->
+    <!-- Footer starts here -->
+    <div class="parallax1">
+        <div class="footer">
+            <div class="quick-links">
+                <div>Locations</div>
+                <ul>
+                    <li><a href="" class="a-links">Address 1</a></li>
+                    <li><a href="" class="a-links">Address 2</a></li>
+                    <li><a href="" class="a-links">Address 3</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <div>Careers</div>
+                <ul>
+                    <li><a href="" class="a-links">Packing Staff</a></li>
+                    <li><a href="" class="a-links">Delivery Agents</a></li>
+                    <li><a href="" class="a-links">Shelf Filters</a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <div>Quick Links</div>
+                <ul>
+                    <li><a href="" class="a-links">Contact Us</a></li>
+                    <li><a href="" class="a-links">FAQ</a></li>
+                    <li><a href="" class="a-links">Help</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyrights">
+        <i class="far fa-copyright fa-lx"></i>2022 Just IT Bootcamp
+
+    </div>
+
+    <!-- Footer Ends here -->
+
+</body>
+
+</html>

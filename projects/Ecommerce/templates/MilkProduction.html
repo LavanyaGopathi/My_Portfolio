@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Production</title>
+    <style>
+        html {
+            background: url(../static/images/cow.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        @keyframes example {
+            0% {
+                color: red;
+            }
+            25% {
+                color: yellow;
+            }
+            50% {
+                color: blue;
+            }
+            75% {
+                color: green;
+            }
+            100% {
+                color: red;
+            }
+        }
+        
+        h1 {
+            color: cadetblue;
+            max-height: 100%vh;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 80px;
+            justify-content: center;
+            font-size: 75px;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        .horizontal_dotted_line {
+            justify-content: center;
+            border-bottom: 5px dotted darkblue;
+            width: 100px;
+            display: inline-block;
+            transform: translateY(-50%);
+        }
+        
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Milk Production</h1>
+
+    <div class="row">
+        <img src="../static/images/milk.jpeg" alt="milkTaking" width="350px" height="300px" />
+        <div class="horizontal_dotted_line"></div>
+        <img src="../static/images/milkfactory.jpeg" alt="milkfactory" width="350px" height="300px" />
+        <div class="horizontal_dotted_line"></div>
+        <img src="../static/images/milkProducts.jpeg" alt="milkProducts" width="350px" height="300px" />
+
+    </div>
+
+</body>
+
+</html>

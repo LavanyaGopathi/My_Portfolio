@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultivating Crops</title>
+    <style>
+        html {
+            background: url(../static/images/greencolor.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        img {
+            border-radius: 50%;
+        }
+        
+        h1 {
+            color: aliceblue;
+            max-height: 100%vh;
+            text-align: center;
+            vertical-align: middle;
+            justify-content: center;
+            font-size: 30px;
+        }
+        
+        h5 {
+            font-size: 15px;
+            color: black;
+            padding: 2px;
+        }
+        /* /* div.gallery {
+            border: 1px solid #ccc;
+        } */
+        
+        div.gallery:hover {
+            border: 1px solid black;
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            color: aliceblue;
+            font-size: 15px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 31%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cultivation of Crops</h1>
+    <div class="row">
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="../static/images/riceCrop.jpg">
+                    <img src="../static/images/riceCrop.jpg" alt="RiceCrop" width="600" height="400">
+                </a>
+                <div class="desc">1.Cultivation Of Rice</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="../static/images/peanut.jpeg">
+                    <img src="../static/images/peanut.jpeg" alt="peanutCrop" width="600" height="400">
+                </a>
+                <div class="desc">2.Peanut Crop</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="../static/images/mango1.jpg">
+                    <img src="../static/images/mango1.jpg" alt="Mangos" width="600" height="400">
+                </a>
+                <div class="desc">3.Cultivation Of Mango Fruits</div>
+            </div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="../static/images/sugarCane.jpeg">
+                <img src="../static/images/sugarCane.jpeg" alt="sugarCane" width="600" height="400">
+            </a>
+            <div class="desc">4.Sugar Cane Cultivation</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="../static/images/tomotas.jpg">
+                <img src="../static/images/tomotas.jpg" alt="tomotoes" width="600" height="400">
+            </a>
+            <div class="desc">5.Tomotoes Cultivation</div>
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="../static/images/greenChillies.jpeg">
+                <img src="../static/images/greenChillies.jpeg" alt="GreenChillies" width="600" height="400">
+            </a>
+            <div class="desc">6.Green Chillies</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
